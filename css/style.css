@@ -1,0 +1,263 @@
+/*CORPO*/
+
+body {
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Asapro, sans-serif;
+    color: #000000;
+}
+
+.botao {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+
+/*Navegação*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+}
+
+nav>a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Asapro, serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*Cabeçalho*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    background-color: #000000;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#sobre h2 {
+    color: #000000;
+}
+
+#sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* SERVIÇOS */
+
+#serviços {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#serviços div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#serviços img {
+    height: 110px;
+}
+
+
+/* FOTOS */
+
+#fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#fotos h2 {
+    margin-bottom: 20px;
+}
+
+#fotos img {
+    width: 100%;
+}
+
+
+/* CONTATO */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contato div {
+    height: auto;
+    width: 150px;
+}
+
+#contato h2 {
+    color: #000000;
+}
+
+#contato img {
+    height: 50px;
+}
+
+#contato a {
+    color: #000000;
+}
+
+#contato .vem {
+    font-family: Nunito;
+    font-size: 20px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    /* NAV */
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+    /* CABEÇALHO */
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+        background-image: url("../img/logo2.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    /* SOBRE */
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        min-height: 250px;
+    }
+    /* SERVICOS */
+    #serviços {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #serviços h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #serviços div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    #fotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #fotos h2 {
+        width: 100%;
+        text-align: center;
+    }
+    #fotos img {
+        width: 33.3333333%;
+    }
+    /* CONTATOS */
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #contato h2,
+    #contato p {
+        width: 100%;
+    }
+}
